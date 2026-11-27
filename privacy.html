@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy · DocChase</title>
+  <meta name="description" content="Placeholder privacy note for the DocChase prototype. Data stays in this browser.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,520;9..144,640&family=Outfit:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,520;9..144,640&family=Outfit:wght@400;500;600;700&display=swap"></noscript>
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="wrap site-header">
+    <a class="brand" href="index.html">
+      <svg viewBox="0 0 32 32" width="34" height="34" aria-hidden="true"><rect x="5" y="4" width="16" height="21" rx="2.4" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M9 10.5h8M9 14.5h8M9 18.5h5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="22.5" cy="22.5" r="7" fill="#0B5A4E"/><path d="M19.4 22.6l2.1 2.1 4.1-4.4" fill="none" stroke="#F7F3EB" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      DocChase
+    </a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a class="btn btn-primary" href="app/index.html">Open the prototype</a>
+    </nav>
+  </header>
+  <main id="main" class="wrap legal">
+    <p class="section-kicker">Placeholder</p>
+    <h1>Privacy</h1>
+    <div class="prose">
+      <p>This is a placeholder privacy note for a static prototype. It is not a policy for a launched service, and DocChase is not collecting data on a server.</p>
+      <h2>What stays on this device</h2>
+      <ul>
+        <li>The waitlist form stores name, email, firm name, and firm size in local storage under <code>docchase.waitlist.v1</code>.</li>
+        <li>The app stores the sample firm, checklist changes, pipeline moves, reminder settings, firm name, and tax deadline under <code>docchase.demo.v1</code>.</li>
+        <li>Choosing a file in the upload portal uses the file name only. The prototype does not read or upload the contents.</li>
+      </ul>
+      <h2>What this prototype does not do</h2>
+      <ul>
+        <li>It does not create an account, set a cookie for tracking, or call an API.</li>
+        <li>It does not send email or text messages.</li>
+        <li>The twelve clients in the app are fictional and are here for demonstration.</li>
+      </ul>
+      <h2>How to remove it</h2>
+      <p>Use Reset demo data inside the app to restore the sample firm. Clear this site's local storage in the browser to remove the waitlist as well. Closing the tab does not send a copy anywhere, because there is nowhere to send it.</p>
+      <p><a href="index.html">Back to DocChase</a> · <a href="terms.html">Terms</a></p>
+    </div>
+  </main>
+  <footer class="wrap site-footer">
+    <p>© 2026 DocChase · Prototype</p>
+    <nav aria-label="Footer">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </nav>
+  </footer>
+</body>
+</html>
