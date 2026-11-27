@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DocChase — Document autopilot for small tax firms</title>
+  <meta name="description" content="DocChase builds a per-client document checklist, reminds clients only about what is still missing, and gives a small firm one pipeline from request to filed.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,520;9..144,640&family=Outfit:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,520;9..144,640&family=Outfit:wght@400;500;600;700&display=swap"></noscript>
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="wrap site-header">
+    <a class="brand" href="index.html">
+      <svg viewBox="0 0 32 32" width="34" height="34" aria-hidden="true"><rect x="5" y="4" width="16" height="21" rx="2.4" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M9 10.5h8M9 14.5h8M9 18.5h5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="22.5" cy="22.5" r="7" fill="#0B5A4E"/><path d="M19.4 22.6l2.1 2.1 4.1-4.4" fill="none" stroke="#F7F3EB" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      DocChase
+    </a>
+    <input class="nav-toggle" type="checkbox" id="nav-toggle">
+    <label class="nav-burger" for="nav-toggle">Menu</label>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="#product">Product</a>
+      <a href="#method">How it works</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+      <a class="btn btn-primary" href="app/index.html">Open the prototype</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="wrap hero">
+      <div>
+        <p class="eyebrow">For firms of 1–30 people</p>
+        <h1>Stop chasing documents. Start the return.</h1>
+        <p class="hero-copy">DocChase is the document autopilot for small accounting, bookkeeping, and tax-prep firms. It builds each client's checklist from last year, reminds them only about what is still missing, and stops the moment the file arrives.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="app/index.html">Open the prototype</a>
+          <a class="btn btn-secondary" href="#waitlist">Join the waitlist</a>
+        </div>
+        <p class="fine">A working front-end prototype. Sample clients are fictional. Classification and reminders are simulated, and nothing is emailed.</p>
+      </div>
+      <aside class="mock" aria-label="Illustrative checklist">
+        <p class="mock-kicker">Example · fictional client</p>
+        <div class="mock-top">
+          <strong>Maya Chen</strong>
+          <span>2026 · 1 of 3</span>
+        </div>
+        <div class="mock-bar" aria-hidden="true"><i></i></div>
+        <div class="mock-row"><span class="mark on"></span><span>W-2 · Northstar Labs</span><span class="status">In</span></div>
+        <div class="mock-row"><span class="mark"></span><span>1099-INT · Pier Savings</span><span class="status open">Missing</span></div>
+        <div class="mock-row"><span class="mark"></span><span>Charitable receipts</span><span class="status open">Missing</span></div>
+        <p class="mock-foot">The next reminder names only the two open items, then goes quiet when they arrive.</p>
+      </aside>
+    </section>
+
+    <section class="wrap" id="problem">
+      <p class="section-kicker">The problem</p>
+      <h2>April is lost to a question the file already answered.</h2>
+      <p class="intro">Document collection still runs on a generic organizer, a shared inbox, and a partner asking whether the 1099 showed up. The work is repetitive, and it lands when the firm is already short of preparers.</p>
+      <ol class="ledger">
+        <li>
+          <span>01</span>
+          <div>
+            <h3>The organizer does not know the client</h3>
+            <p>A retiree gets asked for a K-1. A freelancer gets asked for a mortgage statement. People stall on questions that were never theirs, and staff still have to translate what came back.</p>
+          </div>
+        </li>
+        <li>
+          <span>02</span>
+          <div>
+            <h3>Files arrive in every channel</h3>
+            <p>Email, text, a portal, a photo at the front desk. Someone retypes the status into a spreadsheet that is already a week behind.</p>
+          </div>
+        </li>
+        <li>
+          <span>03</span>
+          <div>
+            <h3>Reminders keep going after the document is in</h3>
+            <p>A blanket nudge lists the whole organizer. The client who already sent the W-2 gets the same note as the client who has sent nothing.</p>
+          </div>
+        </li>
+        <li>
+          <span>04</span>
+          <div>
+            <h3>March becomes a status desk</h3>
+            <p>"Did you get my documents?" is not a tax question. It is a tracking failure, and it consumes the weeks the firm needed for preparation and review.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="wrap" id="product">
+      <div class="feature-grid">
+        <div>
+          <p class="section-kicker">Product</p>
+          <h2>A checklist that shrinks itself.</h2>
+          <p class="intro">DocChase sits in front of preparation. It does not file the return. It gets the firm to a complete file without another round of phone tag.</p>
+        </div>
+        <div class="features">
+          <article class="feature">
+            <h3>Per-client lists from last year</h3>
+            <p>W-2s, 1099-NEC, INT, DIV, and B, K-1s, Form 1098, property tax, charitable receipts, childcare, and the odd item that client always has. Not a master list of every form in the catalog.</p>
+          </article>
+          <article class="feature">
+            <h3>Reminders that list only the gaps</h3>
+            <p>Each note names what is still open. When the last item matches, the cadence stops. No one is nudged for a document the firm already has.</p>
+          </article>
+          <article class="feature">
+            <h3>One upload link per checklist</h3>
+            <p>The client does not pick a folder or learn a portal. The link belongs to that checklist, and staff can see the same queue.</p>
+          </article>
+          <article class="feature">
+            <h3>A match, with a year check</h3>
+            <p>The prototype classifies a file name onto a checklist line and shows a confidence score. A 2025 form on a 2026 request is flagged instead of marked received.</p>
+          </article>
+          <article class="feature">
+            <h3>A board the whole office can read</h3>
+            <p>Requested, partially received, ready to prepare, in preparation, in review, waiting on client, filed. Drag a card or use Move.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap" id="method">
+      <p class="section-kicker">How it works</p>
+      <h2>Four steps between the organizer and the return.</h2>
+      <div class="steps">
+        <article class="step">
+          <b>01</b>
+          <h3>Build the list</h3>
+          <p>Start from last year's profile so the request matches the person, the trust, or the shop.</p>
+        </article>
+        <article class="step">
+          <b>02</b>
+          <h3>Send one link</h3>
+          <p>The client gets a short list and a single place to put files. Staff stop collecting from four inboxes.</p>
+        </article>
+        <article class="step">
+          <b>03</b>
+          <h3>Match what arrives</h3>
+          <p>A simulated classifier proposes the checklist line, scores the match, and refuses a prior-year form.</p>
+        </article>
+        <article class="step">
+          <b>04</b>
+          <h3>Work the board</h3>
+          <p>Ready files move into preparation. Open files stay on a reminder that names only the gap.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="wrap" id="pricing">
+      <p class="section-kicker">Pricing</p>
+      <h2>Seats for a small practice.</h2>
+      <p class="price-note">Hypothetical pricing for illustration</p>
+      <p class="intro" style="margin-top:14px">Not an offer, not a checkout, and not a live subscription. Figures below are a sketch of how a product like this could be packaged.</p>
+      <div class="tiers">
+        <article class="tier">
+          <h3>Solo</h3>
+          <p class="price">$49 <span>/ month</span></p>
+          <ul>
+            <li>1 preparer</li>
+            <li>Up to 75 active checklists</li>
+            <li>Email reminders</li>
+            <li>Upload link and pipeline</li>
+          </ul>
+          <a class="btn btn-secondary" href="#waitlist">Join the waitlist</a>
+        </article>
+        <article class="tier featured">
+          <h3>Firm</h3>
+          <p class="price">$149 <span>/ month</span></p>
+          <ul>
+            <li>Up to 8 staff</li>
+            <li>Up to 400 active checklists</li>
+            <li>Email and text reminders</li>
+            <li>Wrong-year flags</li>
+          </ul>
+          <a class="btn btn-light" href="app/index.html">Open the prototype</a>
+        </article>
+        <article class="tier">
+          <h3>Practice</h3>
+          <p class="price">$349 <span>/ month</span></p>
+          <ul>
+            <li>Up to 30 staff</li>
+            <li>Unlimited checklists, hypothetically</li>
+            <li>Shared cadence controls</li>
+            <li>Multiple preparers on one board</li>
+          </ul>
+          <a class="btn btn-secondary" href="#waitlist">Join the waitlist</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="wrap" id="faq">
+      <p class="section-kicker">FAQ</p>
+      <h2>Straight answers.</h2>
+      <div class="faq">
+        <details>
+          <summary>Who is DocChase for?</summary>
+          <p>Small accounting, bookkeeping, and tax-prep firms, roughly 1 to 30 people, where partners and staff still chase source documents themselves.</p>
+        </details>
+        <details>
+          <summary>Does this prototype send email or text messages?</summary>
+          <p>No. Reminders are previews. The page says so. Changing the cadence only changes what the preview and the queue would do.</p>
+        </details>
+        <details>
+          <summary>Is the matching real AI?</summary>
+          <p>No. The upload portal is a labeled simulation. It uses rules on the file name: form type, a payer word, and a four-digit year. It does not read the file.</p>
+        </details>
+        <details>
+          <summary>Does DocChase prepare or file the return?</summary>
+          <p>No. It ends where preparation starts. The pipeline tracks the handoff through review and filing, but it is not tax software.</p>
+        </details>
+        <details>
+          <summary>Can a firm keep its current portal?</summary>
+          <p>That is the point of the product direction: one link and a status the firm can trust. This prototype does not connect to Drake, UltraTax, QuickBooks, or a client portal.</p>
+        </details>
+        <details open>
+          <summary>Where does the waitlist go?</summary>
+          <p>Into local storage in this browser, under a key this page controls. There is no account and no server. Resetting the demo inside the app does not clear the waitlist.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="wrap" id="waitlist">
+      <div class="waitlist">
+        <div>
+          <p class="section-kicker" style="color:#e7c48a">Waitlist</p>
+          <h2>Tell us about the firm.</h2>
+          <p class="intro">Name, email, firm, and size. The form checks those fields and then saves them on this device. You will not get a message from us, because nothing leaves the browser.</p>
+        </div>
+        <div class="waitlist-panel">
+        <form id="waitlist-form" action="#" method="post" novalidate>
+          <label for="name">Name
+            <input id="name" name="name" type="text" autocomplete="name" required>
+          </label>
+          <p class="field-error" id="name-error" role="alert"></p>
+          <label for="email">Email
+            <input id="email" name="email" type="email" autocomplete="email" required>
+          </label>
+          <p class="field-error" id="email-error" role="alert"></p>
+          <label for="firm">Firm name
+            <input id="firm" name="firm" type="text" autocomplete="organization" required>
+          </label>
+          <p class="field-error" id="firm-error" role="alert"></p>
+          <label for="size">Firm size
+            <select id="size" name="size" required>
+              <option value="">Select firm size</option>
+              <option>Just me (1)</option>
+              <option>2–5</option>
+              <option>6–15</option>
+              <option>16–30</option>
+              <option>More than 30</option>
+            </select>
+          </label>
+          <p class="field-error" id="size-error" role="alert"></p>
+          <button class="btn btn-primary" type="submit">Join the waitlist</button>
+        </form>
+        <div class="success" id="waitlist-success" hidden>
+          <h3>You're on the list.</h3>
+          <p id="success-note"></p>
+          <dl>
+            <div><dt>Name</dt><dd id="success-name"></dd></div>
+            <div><dt>Email</dt><dd id="success-email"></dd></div>
+            <div><dt>Firm</dt><dd id="success-firm"></dd></div>
+            <div><dt>Size</dt><dd id="success-size"></dd></div>
+          </dl>
+          <button class="btn btn-secondary" type="button" id="add-another">Add another firm</button>
+        </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap site-footer">
+    <div>
+      <a class="brand" href="index.html"><svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><rect x="5" y="4" width="16" height="21" rx="2.4" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M9 10.5h8M9 14.5h8M9 18.5h5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="22.5" cy="22.5" r="7" fill="#0B5A4E"/><path d="M19.4 22.6l2.1 2.1 4.1-4.4" fill="none" stroke="#F7F3EB" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>DocChase</a>
+      <p>A prototype for small tax and bookkeeping firms. Sample people and prices are not real.</p>
+    </div>
+    <nav aria-label="Footer">
+      <a href="app/index.html">Prototype</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </nav>
+    <p>© 2026 DocChase</p>
+  </footer>
+  <script src="js/waitlist.js"></script>
+</body>
+</html>
